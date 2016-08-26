@@ -12,5 +12,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/txtView"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="Dale Duro" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtView"
+        android:layout_margin="16dp"
+        android:hint="Lo que vaya a poner..."
+        android:id="@+id/txtEdit"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_below="@+id/txtEdit"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#8f1100"
+        android:textColor="#aaaaaa"
+        android:text="Dame Duro"/>
 </RelativeLayout>
