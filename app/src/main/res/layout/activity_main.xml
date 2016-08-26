@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="#8f1100"
+        android:id="@+id/btn"
         android:textColor="#aaaaaa"
         android:text="Dame Duro"/>
 </RelativeLayout>
