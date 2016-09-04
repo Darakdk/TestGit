@@ -66,6 +66,23 @@ public class GameActivity extends AppCompatActivity {
                 //do something
                 Random r = new Random();
                 botonrandom.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
+                if(botonrandom.getX()<0)
+                {
+                    botonrandom.setX(0);
+                }
+                else if(botonrandom.getX()>500)
+                {
+                    botonrandom.setX(500);
+                }
+
+                if(botonrandom.getY()<100)
+                {
+                    botonrandom.setY(100);
+                }
+                else if(botonrandom.getY()>900)
+                {
+                    botonrandom.setY(900);
+                }
                 h.postDelayed(this, delay1);
             }
         }, delay1);
