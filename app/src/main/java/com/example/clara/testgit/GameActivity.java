@@ -3,6 +3,7 @@ package com.example.clara.testgit;
 import android.os.Handler;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -10,6 +11,9 @@ import android.widget.TextView;
 import java.util.Random;
 import android.view.View;
 import android.widget.Button;
+
+import java.util.Random;
+import android.widget.TextView;
 
 import java.util.Random;
 
