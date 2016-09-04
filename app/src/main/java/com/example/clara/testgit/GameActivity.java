@@ -15,6 +15,8 @@ import java.util.Random;
 
 public class GameActivity extends AppCompatActivity {
     private String zodiac;
+    private int points=0;
+    private int symbol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         zodiac="Aries";
+        symbol=1;
         final TextView txtSim = (TextView) findViewById(R.id.simbol);
 
 
@@ -39,10 +42,10 @@ public class GameActivity extends AppCompatActivity {
 
                 switch (n)
                 {
-                    case 1: zodiac="Aries";break;
-                    case 2: zodiac="Tauro";break;
-                    case 3: zodiac="Piscis";break;
-                    default: zodiac="Cancer"; break;
+                    case 1: zodiac="Aries"; symbol=1;break;
+                    case 2: zodiac="Tauro"; symbol=2;break;
+                    case 3: zodiac="Piscis"; symbol=3;break;
+                    default: zodiac="Cancer"; symbol=4; break;
                 }
 
                 txtSim.setText(zodiac);
@@ -91,7 +94,14 @@ public class GameActivity extends AppCompatActivity {
         botonrandom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(symbol==1)
+                {
+                    points+=3;
+                }
+                else
+                {
+                    points-=1;
+                }
             }
         });
     }
