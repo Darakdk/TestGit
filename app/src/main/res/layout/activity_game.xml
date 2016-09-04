@@ -13,7 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnrandom"
-        android:text="Random"/>
+        android:background="@drawable/aries"
+        android:layout_above="@+id/btnrandom3"
+        android:layout_alignRight="@+id/btnrandom2"
+        android:layout_alignEnd="@+id/btnrandom2" />
 
     <TextView
         android:id="@+id/simbol"
@@ -23,5 +26,34 @@
         android:layout_centerHorizontal="true"
         android:textSize="50dp"
         android:textColor="#ff3333"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnrandom1"
+        android:background="@drawable/tauros"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnrandom3"
+        android:layout_alignStart="@+id/btnrandom3" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnrandom2"
+        android:background="@drawable/cancer"
+        android:layout_above="@+id/btnrandom1"
+        android:layout_toLeftOf="@+id/simbol"
+        android:layout_toStartOf="@+id/simbol" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnrandom3"
+        android:background="@drawable/piscis"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/simbol"
+        android:layout_toEndOf="@+id/simbol" />
+
 
 </RelativeLayout>
