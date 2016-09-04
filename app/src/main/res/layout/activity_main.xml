@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,29 +9,4 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.clara.testgit.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtView"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:text="Dale Duro" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtView"
-        android:layout_margin="16dp"
-        android:hint="Lo que vaya a poner..."
-        android:id="@+id/txtEdit"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_margin="32dp"
-        android:layout_below="@+id/txtEdit"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="#8f1100"
-        android:id="@+id/btn"
-        android:textColor="#aaaaaa"
-        android:text="Dame Duro"/>
-</RelativeLayout>
+</LinearLayout>
