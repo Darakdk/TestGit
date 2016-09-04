@@ -15,4 +15,13 @@
         android:id="@+id/btnrandom"
         android:text="Random"/>
 
+    <TextView
+        android:id="@+id/simbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aries"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:textColor="#ff3333"/>
+
 </RelativeLayout>
