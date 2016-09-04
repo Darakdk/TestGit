@@ -91,6 +91,60 @@ public class GameActivity extends AppCompatActivity {
                 {
                     botonrandom.setY(900);
                 }
+
+                if(botonrandom1.getX()<0)
+                {
+                    botonrandom1.setX(0);
+                }
+                else if(botonrandom1.getX()>500)
+                {
+                    botonrandom1.setX(500);
+                }
+
+                if(botonrandom1.getY()<100)
+                {
+                    botonrandom1.setY(100);
+                }
+                else if(botonrandom1.getY()>900)
+                {
+                    botonrandom1.setY(900);
+                }
+
+                if(botonrandom2.getX()<0)
+                {
+                    botonrandom2.setX(0);
+                }
+                else if(botonrandom2.getX()>500)
+                {
+                    botonrandom2.setX(500);
+                }
+
+                if(botonrandom2.getY()<100)
+                {
+                    botonrandom2.setY(100);
+                }
+                else if(botonrandom2.getY()>900)
+                {
+                    botonrandom2.setY(900);
+                }
+
+                if(botonrandom3.getX()<0)
+                {
+                    botonrandom3.setX(0);
+                }
+                else if(botonrandom3.getX()>500)
+                {
+                    botonrandom3.setX(500);
+                }
+
+                if(botonrandom3.getY()<100)
+                {
+                    botonrandom3.setY(100);
+                }
+                else if(botonrandom3.getY()>900)
+                {
+                    botonrandom3.setY(900);
+                }
                 h.postDelayed(this, delay1);
             }
         }, delay1);
