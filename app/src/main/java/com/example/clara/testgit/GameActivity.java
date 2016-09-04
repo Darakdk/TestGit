@@ -166,6 +166,48 @@ public class GameActivity extends AppCompatActivity {
                 }
             }
         });
+
+        botonrandom1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(symbol==1)
+                {
+                    points+=3;
+                }
+                else
+                {
+                    points-=1;
+                }
+            }
+        });
+
+        botonrandom2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(symbol==1)
+                {
+                    points+=3;
+                }
+                else
+                {
+                    points-=1;
+                }
+            }
+        });
+
+        botonrandom3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(symbol==1)
+                {
+                    points+=3;
+                }
+                else
+                {
+                    points-=1;
+                }
+            }
+        });
     }
 
 
