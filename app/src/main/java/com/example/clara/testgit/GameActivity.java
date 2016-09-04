@@ -54,7 +54,9 @@ public class GameActivity extends AppCompatActivity {
         }, delay);
 
         final Button botonrandom = (Button) findViewById(R.id.btnrandom);
-
+        final Button botonrandom1 = (Button) findViewById(R.id.btnrandom1);
+        final Button botonrandom2 = (Button) findViewById(R.id.btnrandom2);
+        final Button botonrandom3 = (Button) findViewById(R.id.btnrandom3);
         //ObjectAnimator animX = ObjectAnimator.ofFloat(botonrandom, "xTranslate", 0f, 50f);
         //ObjectAnimator animY = ObjectAnimator.ofFloat(botonrandom, "TranslateY", 0f, 50f);
 
@@ -69,6 +71,12 @@ public class GameActivity extends AppCompatActivity {
                 //do something
                 Random r = new Random();
                 botonrandom.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
+                Random r1 = new Random();
+                botonrandom1.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
+                Random r2 = new Random();
+                botonrandom2.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
+                Random r3 = new Random();
+                botonrandom3.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
                 if(botonrandom.getX()<0)
                 {
                     botonrandom.setX(0);
@@ -85,6 +93,60 @@ public class GameActivity extends AppCompatActivity {
                 else if(botonrandom.getY()>900)
                 {
                     botonrandom.setY(900);
+                }
+
+                if(botonrandom1.getX()<0)
+                {
+                    botonrandom1.setX(0);
+                }
+                else if(botonrandom1.getX()>500)
+                {
+                    botonrandom1.setX(500);
+                }
+
+                if(botonrandom1.getY()<100)
+                {
+                    botonrandom1.setY(100);
+                }
+                else if(botonrandom1.getY()>900)
+                {
+                    botonrandom1.setY(900);
+                }
+
+                if(botonrandom2.getX()<0)
+                {
+                    botonrandom2.setX(0);
+                }
+                else if(botonrandom2.getX()>500)
+                {
+                    botonrandom2.setX(500);
+                }
+
+                if(botonrandom2.getY()<100)
+                {
+                    botonrandom2.setY(100);
+                }
+                else if(botonrandom2.getY()>900)
+                {
+                    botonrandom2.setY(900);
+                }
+
+                if(botonrandom3.getX()<0)
+                {
+                    botonrandom3.setX(0);
+                }
+                else if(botonrandom3.getX()>500)
+                {
+                    botonrandom3.setX(500);
+                }
+
+                if(botonrandom3.getY()<100)
+                {
+                    botonrandom3.setY(100);
+                }
+                else if(botonrandom3.getY()>900)
+                {
+                    botonrandom3.setY(900);
                 }
                 h.postDelayed(this, delay1);
             }
