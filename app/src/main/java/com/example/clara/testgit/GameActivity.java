@@ -34,7 +34,7 @@ public class GameActivity extends AppCompatActivity {
         final Handler h1 = new Handler();
         final int delay1 = 500; //milliseconds
 
-        TextView txtPoint=(TextView) findViewById(R.id.txtPuntos);
+        final TextView txtPoint=(TextView) findViewById(R.id.txtpuntos);
         txtPoint.setText(String.valueOf(points));
 
         h.postDelayed(new Runnable(){
@@ -80,76 +80,76 @@ public class GameActivity extends AppCompatActivity {
                 botonrandom2.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
                 Random r3 = new Random();
                 botonrandom3.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
-                if(botonrandom.getX()<0)
+                if(botonrandom.getX()<100)
                 {
-                    botonrandom.setX(0);
+                    botonrandom.animate().x(100);
                 }
-                else if(botonrandom.getX()>500)
+                else if(botonrandom.getX()>700)
                 {
-                    botonrandom.setX(500);
+                    botonrandom.animate().x(700);
                 }
 
                 if(botonrandom.getY()<100)
                 {
-                    botonrandom.setY(100);
+                    botonrandom.animate().y(100);
                 }
-                else if(botonrandom.getY()>900)
+                else if(botonrandom.getY()>800)
                 {
-                    botonrandom.setY(900);
+                    botonrandom.animate().y(800);
                 }
 
-                if(botonrandom1.getX()<0)
+                if(botonrandom1.getX()<100)
                 {
-                    botonrandom1.setX(0);
+                    botonrandom1.animate().x(100);
                 }
-                else if(botonrandom1.getX()>500)
+                else if(botonrandom1.getX()>400)
                 {
-                    botonrandom1.setX(500);
+                    botonrandom1.animate().x(400);
                 }
 
                 if(botonrandom1.getY()<100)
                 {
-                    botonrandom1.setY(100);
+                    botonrandom1.animate().y(100);
                 }
-                else if(botonrandom1.getY()>900)
+                else if(botonrandom1.getY()>800)
                 {
-                    botonrandom1.setY(900);
+                    botonrandom1.animate().y(800);
                 }
 
-                if(botonrandom2.getX()<0)
+                if(botonrandom2.getX()<100)
                 {
-                    botonrandom2.setX(0);
+                    botonrandom2.animate().x(100);
                 }
-                else if(botonrandom2.getX()>500)
+                else if(botonrandom2.getX()>400)
                 {
-                    botonrandom2.setX(500);
+                    botonrandom2.animate().x(400);
                 }
 
                 if(botonrandom2.getY()<100)
                 {
-                    botonrandom2.setY(100);
+                    botonrandom2.animate().y(100);
                 }
-                else if(botonrandom2.getY()>900)
+                else if(botonrandom2.getY()>800)
                 {
-                    botonrandom2.setY(900);
+                    botonrandom2.animate().y(800);
                 }
 
-                if(botonrandom3.getX()<0)
+                if(botonrandom3.getX()<100)
                 {
-                    botonrandom3.setX(0);
+                    botonrandom3.animate().x(100);
                 }
-                else if(botonrandom3.getX()>500)
+                else if(botonrandom3.getX()>400)
                 {
-                    botonrandom3.setX(500);
+                    botonrandom3.animate().x(400);
                 }
 
                 if(botonrandom3.getY()<100)
                 {
-                    botonrandom3.setY(100);
+                    botonrandom3.animate().y(100);
                 }
-                else if(botonrandom3.getY()>900)
+                else if(botonrandom3.getY()>800)
                 {
-                    botonrandom3.setY(900);
+                    botonrandom3.animate().y(800);
                 }
                 h.postDelayed(this, delay1);
             }
@@ -167,13 +167,14 @@ public class GameActivity extends AppCompatActivity {
                 {
                     points-=1;
                 }
+                txtPoint.setText(String.valueOf(points));
             }
         });
 
         botonrandom1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(symbol==1)
+                if(symbol==2)
                 {
                     points+=3;
                 }
@@ -181,13 +182,14 @@ public class GameActivity extends AppCompatActivity {
                 {
                     points-=1;
                 }
+                txtPoint.setText(String.valueOf(points));
             }
         });
 
         botonrandom2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(symbol==1)
+                if(symbol==3)
                 {
                     points+=3;
                 }
@@ -195,13 +197,14 @@ public class GameActivity extends AppCompatActivity {
                 {
                     points-=1;
                 }
+                txtPoint.setText(String.valueOf(points));
             }
         });
 
         botonrandom3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(symbol==1)
+                if(symbol==4)
                 {
                     points+=3;
                 }
@@ -209,6 +212,7 @@ public class GameActivity extends AppCompatActivity {
                 {
                     points-=1;
                 }
+                txtPoint.setText(String.valueOf(points));
             }
         });
     }
