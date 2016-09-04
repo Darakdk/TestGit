@@ -34,6 +34,9 @@ public class GameActivity extends AppCompatActivity {
         final Handler h1 = new Handler();
         final int delay1 = 500; //milliseconds
 
+        TextView txtPoint=(TextView) findViewById(R.id.txtPuntos);
+        txtPoint.setText(String.valueOf(points));
+
         h.postDelayed(new Runnable(){
             public void run(){
                 //do something
