@@ -51,7 +51,9 @@ public class GameActivity extends AppCompatActivity {
         }, delay);
 
         final Button botonrandom = (Button) findViewById(R.id.btnrandom);
-
+        final Button botonrandom1 = (Button) findViewById(R.id.btnrandom1);
+        final Button botonrandom2 = (Button) findViewById(R.id.btnrandom2);
+        final Button botonrandom3 = (Button) findViewById(R.id.btnrandom3);
         //ObjectAnimator animX = ObjectAnimator.ofFloat(botonrandom, "xTranslate", 0f, 50f);
         //ObjectAnimator animY = ObjectAnimator.ofFloat(botonrandom, "TranslateY", 0f, 50f);
 
@@ -66,6 +68,12 @@ public class GameActivity extends AppCompatActivity {
                 //do something
                 Random r = new Random();
                 botonrandom.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
+                Random r1 = new Random();
+                botonrandom1.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
+                Random r2 = new Random();
+                botonrandom2.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
+                Random r3 = new Random();
+                botonrandom3.animate().xBy(r.nextInt(300)-150).yBy(r.nextInt(300)-150);
                 h.postDelayed(this, delay1);
             }
         }, delay1);
